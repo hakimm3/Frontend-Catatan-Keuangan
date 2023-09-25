@@ -3,6 +3,7 @@ import "../../assets/template_assets/vendors/mdi/css/materialdesignicons.min.css
 import "../../assets/template_assets/vendors/flag-icon-css/css/flag-icon.min.css"
 import "../../assets/template_assets/vendors/css/vendor.bundle.base.css"
 import LogoDark from "../../assets/template_assets/images/logo.svg"
+import { Link } from "react-router-dom"
 
 import PropTypes from "prop-types"
 
@@ -34,7 +35,7 @@ export default function Auth({children, title, greeting, buttonText, termText, f
                                 </div>
                                 {(buttonText == "Login") && <a href="#" className="auth-link text-light">Forgot password?</a>}
                             </div>
-                            <div className="text-center mt-4 font-weight-dark"> {footerText} <a href={footerLink} className="text-primary"> {(buttonText == "Login") ? "Sign Up" : "Login"} </a>
+                            <div className="text-center mt-4 font-weight-dark"> {footerText} <Link to={footerLink} className="text-primary"> {(buttonText == "Login") ? "Sign Up" : "Login"} </Link>
                             </div>
                         </form>
 

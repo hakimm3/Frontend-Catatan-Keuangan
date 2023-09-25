@@ -1,12 +1,10 @@
-import Login from "./components/pages/login";
-import Register from "./components/pages/register";
+import { RouterProvider } from "react-router-dom";
+import route from "./route";
 
 function App() {
+
   return (
-    <>
-      {/* <Login /> */}
-      <Register />
-    </>
+    <RouterProvider router={route} />
   );
 }
 
