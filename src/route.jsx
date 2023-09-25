@@ -3,7 +3,7 @@ import LoginPage from "./components/pages/login";
 import RegisterPage from "./components/pages/register";
 import ErrorPage from "./components/pages/error";
 
-export default createBrowserRouter([
+const Route =  createBrowserRouter([
     {
         path: "/",
         element: <LoginPage />,
@@ -18,3 +18,5 @@ export default createBrowserRouter([
         element: <RegisterPage />
     }
 ])
+
+export default Route
